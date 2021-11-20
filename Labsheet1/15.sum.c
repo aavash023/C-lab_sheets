@@ -1,9 +1,14 @@
 #include<stdio.h>
-int main()
-{
-    int a,b,c,d,e;
-    printf("Enter 5 numbers: ");
-    scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
-    int sum=a+b+c+d+e;
-    printf("The sum of 5 input numbers is %d\n",sum);
+#include<conio.h>
+int main(){
+	int a,num,sum;
+	printf("enter the 5 digit number:");//12345=1+2+3+4+5=25
+	scanf("%d",&num);
+	while(num>0){
+		a=num%10;
+		sum=sum+a;
+		num=num/10;
+	}
+	printf("\n the sum is %d",sum);
+return(0);
 }
